@@ -18,6 +18,7 @@ RUN curl -Lkso mfi.zip https://dl.ubnt.com/mfi/2.1.11/mFi.unix.zip \
  && rm mfi.zip
 
 WORKDIR /home/mFi
+VOLUME /home/mFi/data
 
 EXPOSE 6080 6443 6880 6843
 
