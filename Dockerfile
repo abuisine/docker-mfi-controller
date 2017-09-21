@@ -19,5 +19,6 @@ WORKDIR /home/mFi
 
 EXPOSE 6080 6443 6880 6843
 
+ENV JAVA_OPTS="-Xmx1G"
 ENTRYPOINT ["java", "-jar", "lib/ace.jar"]
 CMD ["start"]
