@@ -1,6 +1,7 @@
 FROM debian
 
 LABEL maintainer="Alexandre Buisine <alexandrejabuisine@gmail.com>"
+LABEL version="0.9"
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get -qq update \
  && apt-get install -yqq --no-install-recommends \
